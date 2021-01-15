@@ -1,7 +1,7 @@
 ---
 home: true
-actionText: 正则入门 →
-actionLink: /regular/
+actionText: JAVA 生产环境下性能监控与调优详解 →
+actionLink: /java-pmat/
 features:
 - title: 持续学习
   details: 每天至少一小时学习，才是真的靠谱
