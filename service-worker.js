@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "1fb3c8372fe70437da337428e37af956"
+    "revision": "763a667c99e9af12a051eb54e3b02379"
   },
   {
     "url": "assets/css/0.styles.2b7aa8da.css",
@@ -78,20 +78,20 @@ self.__precacheManifest = [
     "revision": "75b0bf68bf67412f9daa00a7b6f58fe5"
   },
   {
-    "url": "assets/js/app.b11efc0a.js",
-    "revision": "487fd08eaa1fa2c61b3f9602ab98b5b5"
+    "url": "assets/js/app.e65dfed7.js",
+    "revision": "c32f0286c013b7b60493dc45530a13f9"
   },
   {
     "url": "index.html",
-    "revision": "4a71979cc9d04657130234a24f951e2a"
+    "revision": "b3179d7edae42f8ac59c334e646ae8f3"
   },
   {
     "url": "java-pmat/01.html",
-    "revision": "c2a13a9af32f5ddaa3e1fe538398b40f"
+    "revision": "6035d3be6d3e0e95063cff47489c4c11"
   },
   {
     "url": "java-pmat/index.html",
-    "revision": "0064ec9155bdabe18980b939bbcbeee1"
+    "revision": "2cb12b0ad568e63c3a885fe77dcb093c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
