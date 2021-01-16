@@ -7,7 +7,7 @@ module.exports = {
   port: 8080,
 
   // ~ 站点配置
-  title: 'NOTE-BOOK2',
+  title: 'MRCODE-BOOK2',
   description: '用来记录学习的笔记，在该笔记仓库中的，则是暂未分类的笔记',
   base: '/note-book2/', // gh-page 中是增加了项目名
   markdown: {
