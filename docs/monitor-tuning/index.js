@@ -22,6 +22,15 @@ module.exports = () => {
         '02/01.md',
         '02/02.md'
       ]
+    },
+    {
+      title: '基于 Btrace 的监控调试',
+      collapsable: true,
+      children: [
+        '03/',
+        '03/01.md',
+        '03/02.md'
+      ]
     }
   ]
 }
