@@ -13,6 +13,15 @@ module.exports = () => {
         '01/04.md',
         '01/05.md'
       ]
+    },
+    {
+      title: '基于 JVisualVM 的可视化监控',
+      collapsable: true,
+      children: [
+        '02/',
+        '02/01.md',
+        '02/02.md'
+      ]
     }
   ]
 }
