@@ -31,6 +31,17 @@ module.exports = () => {
         '03/01.md',
         '03/02.md'
       ]
+    },
+    {
+      title: 'Tomcat 性能监控与调优',
+      collapsable: true,
+      children: [
+        '04/',
+        '04/01.md',
+        '04/02.md',
+        '04/03.md',
+        '01/04.md'
+      ]
     }
   ]
 }
