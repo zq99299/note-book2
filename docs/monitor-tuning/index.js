@@ -42,6 +42,17 @@ module.exports = () => {
         '04/03.md',
         '01/04.md'
       ]
+    },
+    {
+      title: 'Nginx 性能监控与调优',
+      collapsable: true,
+      children: [
+        '05/',
+        '05/01.md',
+        '05/02.md',
+        '05/03.md',
+        '05/04.md'
+      ]
     }
   ]
 }
