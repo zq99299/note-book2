@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx 调优 | MRCODE-BOOK2</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="用来记录学习的笔记，在该笔记仓库中的，则是暂未分类的笔记">
+    
+    <link rel="preload" href="/note-book2/assets/css/0.styles.2b7aa8da.css" as="style"><link rel="preload" href="/note-book2/assets/js/app.6bd69eb9.js" as="script"><link rel="preload" href="/note-book2/assets/js/2.5d4861b4.js" as="script"><link rel="preload" href="/note-book2/assets/js/30.681958ad.js" as="script"><link rel="preload" href="/note-book2/assets/js/6.cb14315d.js" as="script"><link rel="prefetch" href="/note-book2/assets/js/10.3b4611eb.js"><link rel="prefetch" href="/note-book2/assets/js/11.fef36dd0.js"><link rel="prefetch" href="/note-book2/assets/js/12.146e98d4.js"><link rel="prefetch" href="/note-book2/assets/js/13.3805043a.js"><link rel="prefetch" href="/note-book2/assets/js/14.bc8a7272.js"><link rel="prefetch" href="/note-book2/assets/js/15.98dd8465.js"><link rel="prefetch" href="/note-book2/assets/js/16.ee287751.js"><link rel="prefetch" href="/note-book2/assets/js/17.f52fec4d.js"><link rel="prefetch" href="/note-book2/assets/js/18.24f8b72b.js"><link rel="prefetch" href="/note-book2/assets/js/19.503479d5.js"><link rel="prefetch" href="/note-book2/assets/js/20.5c3b5dcd.js"><link rel="prefetch" href="/note-book2/assets/js/21.0e347637.js"><link rel="prefetch" href="/note-book2/assets/js/22.081da631.js"><link rel="prefetch" href="/note-book2/assets/js/23.14f5ced5.js"><link rel="prefetch" href="/note-book2/assets/js/24.188d0166.js"><link rel="prefetch" href="/note-book2/assets/js/25.89b9031e.js"><link rel="prefetch" href="/note-book2/assets/js/26.084c93be.js"><link rel="prefetch" href="/note-book2/assets/js/27.b1d02737.js"><link rel="prefetch" href="/note-book2/assets/js/28.3be0a4c2.js"><link rel="prefetch" href="/note-book2/assets/js/29.d4bbc9c8.js"><link rel="prefetch" href="/note-book2/assets/js/3.f27fd4e5.js"><link rel="prefetch" href="/note-book2/assets/js/31.829d4706.js"><link rel="prefetch" href="/note-book2/assets/js/32.4ca5b170.js"><link rel="prefetch" href="/note-book2/assets/js/33.c9581ab4.js"><link rel="prefetch" href="/note-book2/assets/js/4.0fb2f151.js"><link rel="prefetch" href="/note-book2/assets/js/5.7aed23a3.js"><link rel="prefetch" href="/note-book2/assets/js/7.e7564b08.js"><link rel="prefetch" href="/note-book2/assets/js/8.0c60198f.js"><link rel="prefetch" href="/note-book2/assets/js/9.337547fa.js">
+    <link rel="stylesheet" href="/note-book2/assets/css/0.styles.2b7aa8da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note-book2/" class="home-link router-link-active"><!----> <span class="site-name">MRCODE-BOOK2</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note-book2/monitor-tuning/" class="nav-link router-link-active">
+  JAVA 生产环境下性能监控与调优详解
+</a></div> <a href="https://github.com/zq99299/note-book2" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note-book2/monitor-tuning/" class="nav-link router-link-active">
+  JAVA 生产环境下性能监控与调优详解
+</a></div> <a href="https://github.com/zq99299/note-book2" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/note-book2/monitor-tuning/" aria-current="page" class="sidebar-link">JAVA 生产环境下性能监控与调优详解</a></li><li><a href="/note-book2/monitor-tuning/00.html" class="sidebar-link">为什么要学习这课程？</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基于 JDK 命令行工具的监控</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基于 JVisualVM 的可视化监控</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基于 Btrace 的监控调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Tomcat 性能监控与调优</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Nginx 性能监控与调优</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note-book2/monitor-tuning/05/" aria-current="page" class="sidebar-link">Nginx 性能监控与调优</a></li><li><a href="/note-book2/monitor-tuning/05/01.html" class="sidebar-link">ngxhttpstub_status 监控链接信息</a></li><li><a href="/note-book2/monitor-tuning/05/02.html" class="sidebar-link">ngxtop 监控请求信息</a></li><li><a href="/note-book2/monitor-tuning/05/03.html" class="sidebar-link">nginx-rrd 图形化监控</a></li><li><a href="/note-book2/monitor-tuning/05/04.html" aria-current="page" class="active sidebar-link">nginx 调优</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note-book2/monitor-tuning/05/04.html#增加工作线程数和并发连接数" class="sidebar-link">增加工作线程数和并发连接数</a></li><li class="sidebar-sub-header"><a href="/note-book2/monitor-tuning/05/04.html#启用后端长链接" class="sidebar-link">启用后端长链接</a></li><li class="sidebar-sub-header"><a href="/note-book2/monitor-tuning/05/04.html#启用缓存、压缩" class="sidebar-link">启用缓存、压缩</a></li><li class="sidebar-sub-header"><a href="/note-book2/monitor-tuning/05/04.html#操作系统优化" class="sidebar-link">操作系统优化</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nginx-调优"><a href="#nginx-调优" class="header-anchor">#</a> nginx 调优</h1> <p>nginx 有很多的配置参数，这里只将常用的一部分：</p> <h2 id="增加工作线程数和并发连接数"><a href="#增加工作线程数和并发连接数" class="header-anchor">#</a> 增加工作线程数和并发连接数</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment"># 配置为 CPU 的核心数</span>
+events <span class="token punctuation">{</span>
+    <span class="token comment"># 每一个进程打开的最大连接数</span>
+    <span class="token comment"># 包含了 nginx 与客户端 和 nginx 与 upstream 之间的链接</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span> 
+    <span class="token comment"># 可以一次建立多个连接</span>
+    multi_accept on<span class="token punctuation">;</span>
+    use epoll<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>可以查看 nginx 的进程数量来确认启动了几个 worker_processes</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="启用后端长链接"><a href="#启用后端长链接" class="header-anchor">#</a> 启用后端长链接</h2> <p>做反向代理的时候，如何与后端 server 保持长链接</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 默认配置里面有一行，这个是指浏览器与 nginx 之间的长链接保持 65 秒</span>
+keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 与后端建立长链接，需要如下配置</span>
+server <span class="token punctuation">{</span>
+  <span class="token punctuation">..</span>.
+  <span class="token comment"># 配置了一个后端集群</span>
+  upstream server_pool<span class="token punctuation">{</span>
+    server localhost:8080 <span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">max_fails</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">fail_timeout</span><span class="token operator">=</span>30s<span class="token punctuation">;</span>
+    server localhost:8081 <span class="token assign-left variable">weight</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">max_fails</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">fail_timeout</span><span class="token operator">=</span>30s<span class="token punctuation">;</span>
+    keepalive <span class="token number">300</span><span class="token punctuation">;</span> <span class="token comment"># 300 个长链接</span>
+  <span class="token punctuation">}</span>
+  location / <span class="token punctuation">{</span>
+  	proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+  	proxy_set_header Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
+  	proxy_set_header Connection <span class="token string">&quot;upgrade&quot;</span><span class="token punctuation">;</span>
+  	<span class="token comment"># 指向了后端集群</span>
+  	proxy_pass http://server_pool/<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="启用缓存、压缩"><a href="#启用缓存、压缩" class="header-anchor">#</a> 启用缓存、压缩</h2> <p>http 协议以文本为主，对文本做压缩效果很显著</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 如果有压缩好的文件，直接使用
+gzip_static on; 
+# 找不到预压缩文件，进行动态压缩
+gzip on;
+gzip_min_length 3k;
+gzip_buffers 4 16k;
+gzip_http_version 1.0;
+gzip_comp_level 2;
+gzip_proxied any;
+gzip_types text/plain application/x-javascript application/javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png;
+gzip_vary on;  # Vary:Accept-Encoding
+gzip_disable &quot;MSIE [1-6]\.&quot;; # 不支持 IE6
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="操作系统优化"><a href="#操作系统优化" class="header-anchor">#</a> 操作系统优化</h2> <p>配置文件：<code>/etc/sysctl.conf</code>，与 tcpip 协议相关的配置</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 防止一个套接字在有过多视图链接到达时引起过载</span>
+sysctl-w net.ipv4.tcp_syncookies<span class="token operator">=</span><span class="token number">1</span>
+<span class="token comment"># 连接队列：默认为 128</span>
+sysctl-w net.core.somaxconn<span class="token operator">=</span><span class="token number">1024</span>
+<span class="token comment"># timewait 的超时时间</span>
+sysctl-w net.ipv4.tcp_fin_timeout<span class="token operator">=</span><span class="token number">10</span>
+<span class="token comment"># os 直接使用 timewait 的链接</span>
+sysctl-w net.ipv4.tcp_tw_reuse<span class="token operator">=</span><span class="token number">1</span>
+<span class="token comment"># 回收禁用</span>
+sysctl-w net.ipv4.tcp_tw_recycle<span class="token operator">=</span><span class="token number">0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>配置文件：<code>/etc/security/limits.conf</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>* hard nofile <span class="token number">204800</span>
+* soft nofile <span class="token number">204800</span>
+* soft core unlimited
+* soft stack <span class="token number">204800</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>其他优化</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 减少文件在应用和内核之间拷贝</span>
+sendfile on<span class="token punctuation">;</span>
+<span class="token comment"># 当数据包达到一定大小再发送</span>
+tcp_nopush on<span class="token punctuation">;</span>
+<span class="token comment"># 有数据随时发送</span>
+tcp_nodelay off<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/zq99299/note-book2/edit/man/docs/monitor-tuning/05/04.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021-01-27 11:08:27</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note-book2/monitor-tuning/05/03.html" class="prev">
+        nginx-rrd 图形化监控
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/note-book2/assets/js/app.6bd69eb9.js" defer></script><script src="/note-book2/assets/js/2.5d4861b4.js" defer></script><script src="/note-book2/assets/js/30.681958ad.js" defer></script><script src="/note-book2/assets/js/6.cb14315d.js" defer></script>
+  </body>
+</html>
