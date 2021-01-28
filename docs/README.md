@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: JAVA 生产环境下性能监控与调优详解 →
-actionLink: /java-pmat/
+actionLink: /monitor-tuning/
 features:
 - title: 持续学习
   details: 每天至少一小时学习，才是真的靠谱
