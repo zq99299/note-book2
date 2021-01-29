@@ -1,4 +1,4 @@
-const javaPmatSc = require('../java-pmat')
+const monitorTuningSc = require('../monitor-tuning')
 
 module.exports = {
   // ~ 开发配置
@@ -40,10 +40,10 @@ module.exports = {
       updatePopup: true
     },
     nav: [
-      { text: 'JAVA 生产环境下性能监控与调优详解', link: '/java-pmat/' }
+      { text: 'JAVA 生产环境下性能监控与调优详解', link: '/monitor-tuning/' }
     ],
     sidebar: {
-      '/java-pmat/': javaPmatSc()
+      '/monitor-tuning/': monitorTuningSc()
     }
   },
   plugins: [
