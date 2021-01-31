@@ -1,3 +1,8 @@
+<p align="center">
+    <img width="300" src="./docs/.vuepress/public/MLOGO.png" alt="logo">
+    <a href="https://github.com/zq99299/repository-summary" target="_blank">mrcode.cn 笔记系列汇总</a>
+</p>
+
 # note-book2
 
 用来记录工作和学习过程中的笔记，汇总成册方便查阅，类容涵盖各类技术
