@@ -7,12 +7,16 @@ module.exports = {
   port: 8080,
 
   // ~ 站点配置
-  title: 'MRCODE-BOOK2',
+  title: 'NOTE-BOOK2',
   description: '用来记录学习的笔记，在该笔记仓库中的，则是暂未分类的笔记',
   base: '/note-book2/', // gh-page 中是增加了项目名
   markdown: {
     lineNumbers: true
   },
+  head:[
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+  ],
   // theme: 'vue',
   themeConfig: {
     docsDir: 'docs',
@@ -35,6 +39,7 @@ module.exports = {
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '帮助我们改善此页面！',
+    logo: 'MLOG2.png',
     // 主题级别的配置
     serviceWorker: {
       updatePopup: true
