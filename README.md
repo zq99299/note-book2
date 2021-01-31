@@ -1,5 +1,6 @@
 <p align="center">
-    <img width="300" src="./docs/.vuepress/public/MLOGO.png" alt="logo">
+    <img width="200" src="./docs/.vuepress/public/MLOGO.png" alt="logo">
+    <br/>
     <a href="https://github.com/zq99299/repository-summary" target="_blank">mrcode.cn 笔记系列汇总</a>
 </p>
 
