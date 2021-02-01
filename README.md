@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="250" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
+    <img width="200" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
     <br/>
     <br/>
     <a href="https://github.com/zq99299/repository-summary" target="_blank">所有笔记系列导航</a>
