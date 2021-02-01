@@ -1,5 +1,5 @@
 ---
-heroImage: MLOGO200x200.png
+heroImage: mlogo.svg
 home: true
 actionText: JAVA 生产环境下性能监控与调优详解 →
 actionLink: /monitor-tuning/
