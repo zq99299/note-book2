@@ -1,10 +1,13 @@
 <p align="center">
-    <img width="200" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
-    <br/>
-    <br/>
-    <a href="https://github.com/zq99299/repository-summary" target="_blank">所有笔记系列导航</a>
+  <a href="https://github.com/zq99299/repository-summary" target="_blank">
+     <img width="200" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
+  </a>
+  <br/>
+  <br/>
+  <a href="https://github.com/zq99299/repository-summary" target="_blank"> 
+    所有笔记 → 系列导航
+  </a>
 </p>
-
 
 # note-book2
 
@@ -16,7 +19,7 @@
 
 - [note-book](https://zq99299.github.io/note-book/) ： 主仓
 - [note-book2](https://zq99299.github.io/note-book2/) ： 第 2 分仓（本笔记）
-  
+
   note-book 笔记太多，vuepress 构建吃力，分开写了
 
 ## 运行方式
