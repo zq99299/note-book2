@@ -1,8 +1,10 @@
 <p align="center">
-    <img width="200" src="./docs/.vuepress/public/MLOGO.png" alt="logo">
+    <img width="250" src="./docs/.vuepress/public/MLOGO200x200.png" alt="logo">
     <br/>
-    <a href="https://github.com/zq99299/repository-summary" target="_blank">mrcode.cn 笔记系列汇总</a>
+    <br/>
+    <a href="https://github.com/zq99299/repository-summary" target="_blank">所有笔记系列导航</a>
 </p>
+
 
 # note-book2
 
