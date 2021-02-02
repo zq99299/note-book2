@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "db787f245a5d7144ef481f30ccdb7ae1"
+    "revision": "8e488d63b1702a14a954b91f061f1c09"
   },
   {
     "url": "assets/css/0.styles.3b79c169.css",
@@ -226,8 +226,8 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.6c5cb870.js",
-    "revision": "ea490aea27184d464a5db2fbfbfd9e63"
+    "url": "assets/js/10.a5fe5243.js",
+    "revision": "b6de83aca6eb3af47692e98b02edfcba"
   },
   {
     "url": "assets/js/11.75a6e144.js",
@@ -238,8 +238,8 @@ self.__precacheManifest = [
     "revision": "76af23569c88a53acc3a68995ec3e58d"
   },
   {
-    "url": "assets/js/13.dea8a5a5.js",
-    "revision": "1a4d64fb31c2b55bbf4a23a8f6ee6b96"
+    "url": "assets/js/13.28ddef94.js",
+    "revision": "9fc9d0af2244d49197fae82fa48d2616"
   },
   {
     "url": "assets/js/14.4eb8534a.js",
@@ -270,16 +270,16 @@ self.__precacheManifest = [
     "revision": "a04af02c7172502d322103ed64d905b5"
   },
   {
-    "url": "assets/js/20.a1b77e7c.js",
-    "revision": "afe8a89ce74da46b1ae2e96f69ac8e31"
+    "url": "assets/js/20.ea538512.js",
+    "revision": "ef62235a7cb07c5c4c1621aa9f666e5d"
   },
   {
-    "url": "assets/js/21.cfa8411e.js",
-    "revision": "981df33f8c95fafd402763f78181797a"
+    "url": "assets/js/21.9916bf8c.js",
+    "revision": "13661b9aa6ca12414cc5d5acaa81cd34"
   },
   {
-    "url": "assets/js/22.3ed42846.js",
-    "revision": "3ce9c5136fd3fc368491e2006686665e"
+    "url": "assets/js/22.cb8ec823.js",
+    "revision": "0a23c404edc1afffef72b149ad67b808"
   },
   {
     "url": "assets/js/23.afb1df96.js",
@@ -310,8 +310,8 @@ self.__precacheManifest = [
     "revision": "a8c2351ddee730acafa29633a0db48fa"
   },
   {
-    "url": "assets/js/3.29be002c.js",
-    "revision": "71a1361f3d4291566c9e0ee6e46eea0f"
+    "url": "assets/js/3.38b10740.js",
+    "revision": "3141bd5efa598f605743f1b9ac57fc31"
   },
   {
     "url": "assets/js/30.41dd37f2.js",
@@ -378,12 +378,12 @@ self.__precacheManifest = [
     "revision": "b9b8b5a587c7e185883c28aadabdcc07"
   },
   {
-    "url": "assets/js/app.336936bd.js",
-    "revision": "81542d332999b17570142080939c6c2b"
+    "url": "assets/js/app.10e8207d.js",
+    "revision": "5e4374e836edf158de13334b64d5122f"
   },
   {
     "url": "index.html",
-    "revision": "88db064a8962a0ad286cb5457fbe36f3"
+    "revision": "ed6fa119f3926fe330d717d0ec8e9ca2"
   },
   {
     "url": "mlogo.svg",
@@ -391,123 +391,123 @@ self.__precacheManifest = [
   },
   {
     "url": "monitor-tuning/00.html",
-    "revision": "81807aee6be8a8811a699141e7d2715b"
+    "revision": "debe7b095556e2172c8fb77bd9bf218d"
   },
   {
     "url": "monitor-tuning/01/01.html",
-    "revision": "784f0b9552d47bf13f3a06ec607055ce"
+    "revision": "f50c07354488256b3ef259f50410ced4"
   },
   {
     "url": "monitor-tuning/01/02.html",
-    "revision": "b3f8997951c95ab2789d6a6fa2d87065"
+    "revision": "e6dbda4db0227e2fc59c8e1363f1eb69"
   },
   {
     "url": "monitor-tuning/01/03.html",
-    "revision": "7199c547c447e9bf4ec63768b20422b2"
+    "revision": "be255ebb4e9b14fab481c9401c84b34f"
   },
   {
     "url": "monitor-tuning/01/04.html",
-    "revision": "e70fdd850356bd2fd9efc00268ddd778"
+    "revision": "e3b4d47751aa4da1fad60614d2ee5e94"
   },
   {
     "url": "monitor-tuning/01/05.html",
-    "revision": "cb02c26e3be0eedb7907bb84e6208202"
+    "revision": "1f6879983aac3d457b98120a8707f8f3"
   },
   {
     "url": "monitor-tuning/01/index.html",
-    "revision": "37009a33f238bb31998c12c8c3a373ef"
+    "revision": "e6d414ef94016c0197c1b9c9fbe83f68"
   },
   {
     "url": "monitor-tuning/02/01.html",
-    "revision": "2ac9ab43656ac0509bc3f716f7e24017"
+    "revision": "9edc7b465572ec5c723025e1f75128f1"
   },
   {
     "url": "monitor-tuning/02/02.html",
-    "revision": "3fce88936a5dcdacf42e826ca577fb5f"
+    "revision": "d9275950cc0665566b067e120ed39e2f"
   },
   {
     "url": "monitor-tuning/02/index.html",
-    "revision": "cd1aa893b95ef1d67ec2319c6077e551"
+    "revision": "336a3bfb93420ac765cab1a38b88805c"
   },
   {
     "url": "monitor-tuning/03/01.html",
-    "revision": "c342212033eb11d1d94757f6449f7d0c"
+    "revision": "189db0c57d0eb72bef6bec4225828a68"
   },
   {
     "url": "monitor-tuning/03/02.html",
-    "revision": "7c0e647f4196ce3ac895971f997ec785"
+    "revision": "8e1d314ac3177bae2cc69ad501f0f495"
   },
   {
     "url": "monitor-tuning/03/index.html",
-    "revision": "61b580a91130906b5b27366079af608a"
+    "revision": "cdffa0d273710df1ad7dfeb88e4a0de9"
   },
   {
     "url": "monitor-tuning/04/01.html",
-    "revision": "85d98e489fc39f158ee9b924865dc4d3"
+    "revision": "9b802a81f88911a35624d4f7fccbb80d"
   },
   {
     "url": "monitor-tuning/04/02.html",
-    "revision": "91f2268c64ac17c6b595e85cbffedc59"
+    "revision": "c172ddcbc9d2d4549cd7de7a413fc32d"
   },
   {
     "url": "monitor-tuning/04/03.html",
-    "revision": "b84ae1c00813abb503f9eeb27bb3de38"
+    "revision": "3078e2302eac9a58882e7f7f4593126e"
   },
   {
     "url": "monitor-tuning/04/04.html",
-    "revision": "96047b4738b7b4a2d07441b6ed377036"
+    "revision": "bf28777b0b0750e75a367d9588537cac"
   },
   {
     "url": "monitor-tuning/04/index.html",
-    "revision": "35f60d73724922ced14ff68e958133c0"
+    "revision": "a45929d598f05755da7a923295fe2744"
   },
   {
     "url": "monitor-tuning/05/01.html",
-    "revision": "4bea768951a86e0436c44cabcca8ce39"
+    "revision": "05b3e01476c5a1559da63577c0d13f9c"
   },
   {
     "url": "monitor-tuning/05/02.html",
-    "revision": "4182823e812ee3219ce0f1ed15cc6cab"
+    "revision": "60348bd79c298ef595930def5b251c1d"
   },
   {
     "url": "monitor-tuning/05/03.html",
-    "revision": "5bb16203d0bd60853002b09d361de97b"
+    "revision": "a6889e5198f3c54c4c93a491a3822c09"
   },
   {
     "url": "monitor-tuning/05/04.html",
-    "revision": "9be8b71c4f2bd802f1dbfeead2c4ea92"
+    "revision": "5f3b384275803673c5c092540b30ed6b"
   },
   {
     "url": "monitor-tuning/05/index.html",
-    "revision": "bf4a6beb0b09460eb2c2dcfaae368d58"
+    "revision": "4b23735e35ac916f67a5f82d14c1977e"
   },
   {
     "url": "monitor-tuning/06/01.html",
-    "revision": "b5c15717d39804ae7d4f1c8dc2847788"
+    "revision": "10633eea1dfa86072da83b79abf74dfc"
   },
   {
     "url": "monitor-tuning/06/02.html",
-    "revision": "7b65908e48ea9455278db4206a8e720c"
+    "revision": "d424e4edb6a88ba6db367210d3acd880"
   },
   {
     "url": "monitor-tuning/06/03.html",
-    "revision": "a3a681aca611d912bece8017efafd83b"
+    "revision": "762753e9049557c02a3cc718d04acdc1"
   },
   {
     "url": "monitor-tuning/06/04.html",
-    "revision": "5abbf3c1ef93078ac7d2ca95d152f2db"
+    "revision": "34f764565a09e58c47f9c0a202841000"
   },
   {
     "url": "monitor-tuning/06/05.html",
-    "revision": "ccb0fda52e8b85bbe818c46203923d8f"
+    "revision": "f44eb4fe88fd167e5774d73a4b0eff88"
   },
   {
     "url": "monitor-tuning/06/index.html",
-    "revision": "6b016739abb01f446376529c573ed48c"
+    "revision": "b1144bad542f0aeea8cbd5b7559a0910"
   },
   {
     "url": "monitor-tuning/index.html",
-    "revision": "c5cbf49aaf890785f78ae15e9407e9cb"
+    "revision": "ccaebf17c3f1ba386d2e70b82a8320be"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
