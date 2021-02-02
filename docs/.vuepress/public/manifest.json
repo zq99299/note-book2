@@ -9,17 +9,17 @@
     {
       "src": "mlogo.svg",
       "sizes": "48x48",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
       "src": "mlogo.svg",
       "sizes": "100x100",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
       "src": "mlogo.svg",
       "sizes": "200x200",
-      "type": "image/png"
+      "type": "image/svg+xml"
     }
   ]
 }
