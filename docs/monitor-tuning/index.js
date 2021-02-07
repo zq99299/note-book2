@@ -65,6 +65,16 @@ module.exports = () => {
         '06/04.md',
         '06/05.md'
       ]
+    },
+    {
+      title: 'Java 代码层优化',
+      collapsable: true,
+      children: [
+        '07/',
+        '07/01.md',
+        '07/02.md',
+        '07/03.md'
+      ]
     }
   ]
 }
