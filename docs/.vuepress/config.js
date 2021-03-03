@@ -14,7 +14,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  head:[
+  head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
   ],
@@ -23,6 +23,7 @@ module.exports = {
     docsDir: 'docs',
     sidebar: 'auto',
     sidebarDepth: 3, // 嵌套标题侧边栏提取深度，最大为 2，会提取到 h3
+    smoothScroll: true,
     lastUpdated: '上次更新', // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'https://github.com/zq99299/note-book2',
