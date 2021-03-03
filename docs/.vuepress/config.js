@@ -1,4 +1,5 @@
 const monitorTuningSc = require('../monitor-tuning')
+const httpProtocolSc = require('../http-protocol')
 
 module.exports = {
   // ~ 开发配置
@@ -39,16 +40,18 @@ module.exports = {
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '帮助我们改善此页面！',
-    logo: 'mlogo.svg',
+    logo: '/mlogo.svg',
     // 主题级别的配置
     serviceWorker: {
       updatePopup: true
     },
     nav: [
-      { text: 'JAVA 生产环境下性能监控与调优详解', link: '/monitor-tuning/' }
+      { text: 'JAVA 生产环境下性能监控与调优详解', link: '/monitor-tuning/' },
+      { text: '透视 HTTP 协议', link: '/http-protocol/' }
     ],
     sidebar: {
-      '/monitor-tuning/': monitorTuningSc()
+      '/monitor-tuning/': monitorTuningSc(),
+      '/http-protocol/': httpProtocolSc(),
     }
   },
   plugins: [
