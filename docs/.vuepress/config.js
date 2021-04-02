@@ -1,5 +1,6 @@
 const monitorTuningSc = require('../monitor-tuning')
 const httpProtocolSc = require('../http-protocol')
+const dddSc = require('../ddd')
 
 module.exports = {
   // ~ 开发配置
@@ -9,7 +10,7 @@ module.exports = {
 
   // ~ 站点配置
   title: 'NOTE-BOOK2',
-  description: '用来记录学习的笔记，在该笔记仓库中的，则是暂未分类的笔记',
+  description: 'note-book 的第二分仓笔记仓库',
   base: '/note-book2/', // gh-page 中是增加了项目名
   markdown: {
     lineNumbers: true
@@ -48,11 +49,13 @@ module.exports = {
     },
     nav: [
       { text: 'JAVA 生产环境下性能监控与调优详解', link: '/monitor-tuning/' },
-      { text: '透视 HTTP 协议', link: '/http-protocol/' }
+      { text: '透视 HTTP 协议', link: '/http-protocol/' },
+      { text: 'DDD 实战课', link: '/ddd/' }
     ],
     sidebar: {
       '/monitor-tuning/': monitorTuningSc(),
       '/http-protocol/': httpProtocolSc(),
+      '/ddd/': dddSc(),
     }
   },
   plugins: [
