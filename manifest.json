@@ -4,7 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "零散短小的笔记项目，MRCODE 笔记本",
+  "description": "note-book 的第二分仓笔记仓库",
   "icons": [
     {
       "src": "mlogo.svg",
